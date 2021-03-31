@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function greet() {
 	saying=( "You have value, $LOGNAME" )
 	saying+=( "Hello, $LOGNAME, it's nice to see you again" )
@@ -9,6 +11,8 @@ function greet() {
 	saying+=( "You miss 100% of the shots you don't take --Wayne Gretzky --Michael Scott --$LOGNAME" )
 	saying+=( "Creativity is intelligence having fun, $LOGNAME" )
 	saying+=( "If the plan doesn't work, change the plan, but never the goal" )
+	saying+=( "Do or do not, there is no try --Yoda" )
+	saying+=( "A smooth sea never made a skilled sailor -Franklin Delanore Roosevelt" )
 
 	NUMBER=$(( RANDOM % ${#saying[@]}  ))
 	QUOTE=${saying[$NUMBER]}
